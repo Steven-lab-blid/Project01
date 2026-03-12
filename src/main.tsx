@@ -12,7 +12,8 @@ import FormContact from './Challenge01/FormContact';
 import ListaContact from './Challenge01/ListaContac';
 import Navegador from './Challenge02/Navegador';
 import Reproductor from './Challenge02/Reproductor';
-
+import Libreria from './Colas&Pilas/Libreria';
+import Cajero from './Colas&Pilas/Cajero';
 
 export interface Contacto {
   nombre: string;
@@ -93,16 +94,7 @@ function App2() {
 ReactDOM.createRoot(document.getElementById('root')!)
 .render(
   <React.StrictMode>
-    <HelloWorld />
-    <PrintMessage message="Como te va?" />
-    <PrintMessage message="Soy un mensaje!!" />
-    <PrintNumero numero={42} />
-    <PrintValor numero={15} />
-    <Contador />
-    <Arrays />
-    <Arreglos />
-    <EjemploFunciones />
-    <App />
-    <App2 />
+    <Libreria />
+    <Cajero />
   </React.StrictMode>   
 )
